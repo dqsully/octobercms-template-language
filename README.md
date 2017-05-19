@@ -10,7 +10,7 @@ Provides language support for [October CMS's](http://octobercms.com) template fi
 * Compatibility with Emmet
 
 ## Issues
-* Commenting does not work properly (I tried, but please help, VS Code is confusing)
-* The custom bracket autocompletion for Twig that I put in the Atom package does not work for VS Code
+* Commenting does not work properly (I tried, but please help)
+* The custom bracket autocompletion for Twig that I put in the Atom package does not work for VS Code (it may with a lot of tweaking)
 
 ![Screenshot](https://github.com/dqsully/language-octobercms/blob/master/screenshot.png?raw=true)
