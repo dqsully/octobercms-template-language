@@ -1,0 +1,47 @@
+{
+    "name": "octobercms-template-language",
+    "displayName": "OctoberCMS Template Language",
+    "description": "Language support for October's CMS template file syntax.\"",
+    "version": "0.0.1",
+    "publisher": "dqsully",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "octobercms",
+            "aliases": ["October CMS Template", "octobercms"],
+            "extensions": [".htm"],
+            "configuration": "./language-configuration.json"
+        }, {
+            "id": "octobercms-ini",
+            "configuration": "./ini-language-configuration.json"
+        }, {
+            "id": "octobercms-php",
+            "configuration": "./php-language-configuration.json"
+        }, {
+            "id": "octobercms-twig",
+            "configuration": "./twig-language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "octobercms",
+            "scopeName": "text.html.octobercms",
+            "path": "./syntaxes/octobercms.tmLanguage.json"
+        }, {
+            "language": "octobercms-ini",
+            "scopeName": "source.ini.octobercms",
+            "path": "./syntaxes/octobercms-ini.tmLanguage.json"
+        }, {
+            "language": "octobercms-php",
+            "scopeName": "source.php.octobercms",
+            "path": "./syntaxes/octobercms-php.tmLanguage.json"
+        }, {
+            "language": "octobercms-twig",
+            "scopeName": "text.html.twig.octobercms",
+            "path": "./syntaxes/octobercms-twig.tmLanguage.json"
+        }]
+    }
+}
