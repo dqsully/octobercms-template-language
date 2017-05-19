@@ -3,7 +3,7 @@
     "displayName": "OctoberCMS Template Language",
     "description": "Language support for October's CMS template file syntax.\"",
     "version": "0.0.1",
-    "publisher": "djqballer",
+    "publisher": "dqsully",
     "engines": {
         "vscode": "^1.12.0"
     },
