@@ -633,10 +633,6 @@
             {
               "match": "^(?:as|by|attribute|block|constant|cycle|date|dump|include|max|min|parent|random|range|source|template_from_string|str_(?:limit|words|camel|studly|snake|plural)|form_(?:open|ajax|close)|html_(?:strip|limit|clean|email))$",
               "name": "support.function.twig"
-            },
-            {
-              "match": ".*",
-              "name": "entity.name.function.twig"
             }
           ]
         },
