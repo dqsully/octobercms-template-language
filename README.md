@@ -1,7 +1,10 @@
 # octobercms-template-language package for Visual Studio Code
 
 Provides language support for [October CMS's](http://octobercms.com) template file syntax.
-**NOTE:** Because of the limitations of the VS Code grammar system, ``;;`` **must** be at the beginning of your INI script, and ``{##}`` **must** be at the beginning of your Twig/HTML script.
+**NOTE:** Because of the limitations of the VS Code grammar system, `{##}` **must** be at the beginning of your Twig/HTML script.
+
+## Recent Changes
+* Removed dependence on `;;` to begin the INI section
 
 ## Features
 * No dependencies

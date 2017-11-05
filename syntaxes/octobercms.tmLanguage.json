@@ -30,7 +30,7 @@
     },
     {
       "name": "source.ini.octobercms",
-      "begin": ";;",
+      "begin": "^(?=.|\\n)",
       "patterns": [
         {
           "include": "source.ini.octobercms"
