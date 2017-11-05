@@ -5,7 +5,7 @@
   "firstLineMatch": "^;;\\s*$",
   "patterns": [
     {
-      "name": "text.html.twig.octobercms",
+      "contentName": "text.html.twig.octobercms",
       "begin": "\\{#\\s*#\\}$",
       "beginCaptures": {
         "0": {
@@ -24,14 +24,19 @@
       ]
     },
     {
-      "name": "source.php.octobercms",
+      "contentName": "text.html.php",
       "begin": "==\\s*$",
       "end": "(^==\\s*$)|^(?=\\{#\\s*#\\}$)",
       "patterns": [
         {
           "patterns": [
             {
-              "include": "source.php.octobercms"
+              "patterns": [
+                {
+                  "include": "text.html.php#language"
+                }
+              ],
+              "name": "source.php"
             }
           ],
           "name": "meta.embedded.php"
@@ -39,7 +44,7 @@
       ]
     },
     {
-      "name": "source.ini.octobercms",
+      "contentName": "source.ini.octobercms",
       "begin": "^(?=.|\\n)",
       "patterns": [
         {

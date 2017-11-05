@@ -17,9 +17,6 @@
             "extensions": [".htm"],
             "configuration": "./language-configuration.json"
         }, {
-            "id": "octobercms-php",
-            "configuration": "./php-language-configuration.json"
-        }, {
             "id": "octobercms-twig",
             "configuration": "./twig-language-configuration.json"
         }],
@@ -29,13 +26,9 @@
             "path": "./syntaxes/octobercms.tmLanguage.json",
             "embeddedLanguages": {
                 "source.ini": "ini",
-                "source.php.octobercms": "octobercms-php",
+                "text.html.php": "php",
                 "text.html.twig.octobercms": "octobercms-twig"
             }
-        }, {
-            "language": "octobercms-php",
-            "scopeName": "source.php.octobercms",
-            "path": "./syntaxes/octobercms-php.tmLanguage.json"
         }, {
             "language": "octobercms-twig",
             "scopeName": "text.html.twig.octobercms",
