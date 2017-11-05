@@ -13,7 +13,6 @@ Provides language support for [October CMS's](http://octobercms.com) template fi
 * No dependencies
 * Full support for all of the OctoberCMS template language
 * `;;` at the beginning of a file tells VS Code that your `.htm` file is for OctoberCMS
-* Compatibility with Emmet
 
 ## Issues
 * Commenting does not work properly (I tried, but please help)
