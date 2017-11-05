@@ -5,6 +5,9 @@ Provides language support for [October CMS's](http://octobercms.com) template fi
 
 ## Recent Changes
 * Removed dependence on `;;` to begin the INI section
+* Removed custom implementations of PHP and INI
+* Fixed comment commands and bracket matching
+* Fixed most auto-closing brackets and surrounding bracket pairs (for some reason, these bracket pairs apply to a whole file and do not work with embedded languages, so I can't tell VS Code to type an extra closing `#` in the Twig section without it also happening in the PHP and INI sections as well)
 
 ## Features
 * No dependencies
