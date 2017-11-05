@@ -14,17 +14,27 @@
       },
       "patterns": [
         {
-          "include": "text.html.twig.octobercms"
+          "patterns": [
+            {
+              "include": "text.html.twig.octobercms"
+            }
+          ],
+          "name": "meta.embedded.twig"
         }
       ]
     },
     {
-      "name": "text.html.php.octobercms",
+      "name": "source.php.octobercms",
       "begin": "==\\s*$",
       "end": "(^==\\s*$)|^(?=\\{#\\s*#\\}$)",
       "patterns": [
         {
-          "include": "source.php.octobercms"
+          "patterns": [
+            {
+              "include": "source.php.octobercms"
+            }
+          ],
+          "name": "meta.embedded.php"
         }
       ]
     },
@@ -33,7 +43,12 @@
       "begin": "^(?=.|\\n)",
       "patterns": [
         {
-          "include": "source.ini.octobercms"
+          "patterns": [
+            {
+              "include": "source.ini"
+            }
+          ],
+          "name": "meta.embedded.ini"
         }
       ],
       "end": "^(?===\\s*$)"

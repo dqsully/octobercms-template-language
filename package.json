@@ -2,7 +2,7 @@
     "name": "octobercms-template-language",
     "displayName": "OctoberCMS Template Language",
     "description": "Language support for October's CMS template file syntax.\"",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "publisher": "dqsully",
     "engines": {
         "vscode": "^1.12.0"
@@ -17,9 +17,6 @@
             "extensions": [".htm"],
             "configuration": "./language-configuration.json"
         }, {
-            "id": "octobercms-ini",
-            "configuration": "./ini-language-configuration.json"
-        }, {
             "id": "octobercms-php",
             "configuration": "./php-language-configuration.json"
         }, {
@@ -29,11 +26,12 @@
         "grammars": [{
             "language": "octobercms",
             "scopeName": "text.html.octobercms",
-            "path": "./syntaxes/octobercms.tmLanguage.json"
-        }, {
-            "language": "octobercms-ini",
-            "scopeName": "source.ini.octobercms",
-            "path": "./syntaxes/octobercms-ini.tmLanguage.json"
+            "path": "./syntaxes/octobercms.tmLanguage.json",
+            "embeddedLanguages": {
+                "source.ini": "ini",
+                "source.php.octobercms": "octobercms-php",
+                "text.html.twig.octobercms": "octobercms-twig"
+            }
         }, {
             "language": "octobercms-php",
             "scopeName": "source.php.octobercms",
