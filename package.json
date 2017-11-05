@@ -2,7 +2,7 @@
     "name": "octobercms-template-language",
     "displayName": "OctoberCMS Template Language",
     "description": "Language support for October's CMS template file syntax.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "icon": "images/logo.png",
     "publisher": "dqsully",
     "engines": {
@@ -33,7 +33,7 @@
         }, {
             "language": "octobercms-twig",
             "scopeName": "text.html.twig.octobercms",
-            "path": "./syntaxes/octobercms-twig.tmLanguage.json"
+            "path": "./syntaxes/octobercms-twig.tmLanguage"
         }]
     }
 }
