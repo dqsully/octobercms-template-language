@@ -31,15 +31,10 @@
         {
           "patterns": [
             {
-              "patterns": [
-                {
-                  "include": "text.html.php#language"
-                }
-              ],
-              "name": "source.php"
+              "include": "source.php"
             }
           ],
-          "name": "meta.embedded.php"
+          "name": "source.php"
         }
       ]
     },
