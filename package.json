@@ -3,7 +3,7 @@
     "displayName": "OctoberCMS Template Language",
     "description": "Language support for October's CMS template file syntax.",
     "repository": "https://github.com/dqsully/octobercms-template-language",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "icon": "images/logo.png",
     "publisher": "dqsully",
     "engines": {

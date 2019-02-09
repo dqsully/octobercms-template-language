@@ -14,3 +14,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 0.2.2
 - Fixed PHP section causing syntax highlighting to fail
+
+## 0.2.3
+- Allowed `<?php` and `<?` in the PHP section
