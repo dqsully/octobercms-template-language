@@ -29,12 +29,34 @@
       "end": "(^==\\s*$)|^(?=\\{#\\s*#\\}$)",
       "patterns": [
         {
+          "begin": "<\\?(php)?(?:\\s|$)",
+          "end": "\\?>|^(?===\\s*$)|^(?=\\{#\\s*#\\}$)",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.section.embedded.begin.php"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.embedded.begin.php"
+            }
+          },
           "patterns": [
             {
               "include": "source.php"
             }
           ],
-          "name": "source.php"
+          "contentName": "source.php"
+        },
+        {
+          "begin": "(?!<\\?(php)?($|\\s))(?=\\S)",
+          "end": "^(?===\\s*$)|^(?=\\{#\\s*#\\}$)",
+          "patterns": [
+            {
+              "include": "source.php"
+            }
+          ],
+          "contentName": "source.php"
         }
       ]
     },
